@@ -4,5 +4,8 @@ from.views import HomeView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
     path('', HomeView.as_view(), name='home'), #Apuntamos a la vista Home que se encuentra en views.py
+
+    #path('users/', include('users.urls', namespace = 'users'))
 ]
